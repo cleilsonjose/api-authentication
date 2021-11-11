@@ -2,11 +2,16 @@
   "name": "api-authentication",
   "version": "1.0.0",
   "description": "microservice de autenticação usando node",
-  "main": "index.js",
+  "main": "./dist/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node ./index.js"
+    "start": "node ./",
+    "build": "tsc -p ."
   },
   "author": "cleilson josé",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^16.11.7",
+    "typescript": "^4.4.4"
+  }
 }
